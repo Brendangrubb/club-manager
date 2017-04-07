@@ -7,6 +7,7 @@
 
 # dependencies
 /node_modules
+/bower_components
 
 # IDEs and editors
 /.idea
@@ -32,6 +33,7 @@
 npm-debug.log
 testem.log
 /typings
+full-build-instructions.md
 
 # e2e
 /e2e/*.js
@@ -40,3 +42,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Firebase credentials
+/src/app/api-keys.ts
