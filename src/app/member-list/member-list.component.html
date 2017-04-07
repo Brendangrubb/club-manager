@@ -1,3 +1,5 @@
-<p>
-  member-list works!
-</p>
+<div *ngFor="let member of members | async">
+  <div class="panel-body">
+    <h3>{{member.memberName}}</h3>
+  </div>
+</div>
