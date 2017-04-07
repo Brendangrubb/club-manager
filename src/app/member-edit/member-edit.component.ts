@@ -29,6 +29,12 @@ export class MemberEditComponent implements OnInit {
     this.editFormButton = true;
   }
 
+  triggerDeleteMember(selectedMember){
+  if(confirm("Send this member to a mining colony?")){
+    this.memberService.deleteMember(selectedMember);
+  }
+}
+
   constructor(private memberService: MemberService) { }
 
   ngOnInit() {

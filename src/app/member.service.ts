@@ -31,6 +31,11 @@ export class MemberService {
   });
 }
 
+  deleteMember(localMember) {
+    var databaseMember = this.getMemberById(localMember.$key);
+    databaseMember.remove();
+  }
+
   constructor(private angularFire: AngularFire) {
     this.members = angularFire.database.list('members');
   }

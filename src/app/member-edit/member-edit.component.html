@@ -1,5 +1,8 @@
-<button class="btn btn-info btn-sm" *ngIf="editFormButton" (click)="openEditForm(selectedMember)">Edit Member</button>
-<button class="btn btn-danger btn-sm"(click)="deleteMember(selectedMember)">Delete Member</button>
+<div class="center">
+  <button class="btn btn-info btn-sm" *ngIf="editFormButton" (click)="openEditForm(selectedMember)">Edit</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="btn btn-danger btn-sm"(click)="triggerDeleteMember(selectedMember)">Delete</button>
+</div>
 <form *ngIf="editForm">
   <h4>Edit Member Details</h4>
   <div class="form-group">
@@ -30,6 +33,6 @@
     <input [(ngModel)]="selectedMember.image" class="form-control" type="text" name="image" required="required" placeholder="Image URL">
   </div>
   <div class="center">
-    <button class="btn" type="button" name="button" (click)="triggerUpdateMember(selectedMember)">Done Editing</button>
+    <button class="btn  btn-info btn-sm" type="button" name="button" (click)="triggerUpdateMember(selectedMember)">Done Editing</button>
   </div>
 </form>
