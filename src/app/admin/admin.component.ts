@@ -21,6 +21,7 @@ export class AdminComponent implements OnInit {
   submitForm(memberName: string, bio: string, favoriteSeries: string, watchedAll: boolean, image: string){
     var newMember: Member = new Member(memberName, bio, favoriteSeries, watchedAll, image);
     console.log(newMember);
+    this.memberService.addMember(newMember);
   }
 
   constructor(private router: Router, private location: Location, private memberService: MemberService) { }
