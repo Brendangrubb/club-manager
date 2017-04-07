@@ -15,9 +15,18 @@ import { Router } from '@angular/router';
 })
 export class MemberEditComponent implements OnInit {
   @Input() selectedMember;
+  editForm = false;
+  editFormButton = true;
 
-  triggerUpdateMember(selectedMember){
+  openEditForm(selectedMember) {
+    this.editForm = true;
+    this.editFormButton = false;
+  }
+
+  triggerUpdateMember(selectedMember) {
     this.memberService.updateMember(selectedMember);
+    this.editForm = false;
+    this.editFormButton = true;
   }
 
   constructor(private memberService: MemberService) { }
