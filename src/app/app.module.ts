@@ -10,6 +10,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
+import { MemberListComponent } from './member-list/member-list.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    MemberListComponent
   ],
   imports: [
     BrowserModule,
