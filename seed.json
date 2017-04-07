@@ -4,36 +4,36 @@
       "memberName": "Brendan",
       "bio": "Deflector power at maximum. Energy discharge in six seconds. Warp reactor core primary coolant failure. Fluctuate phaser resonance frequencies. Resistance is futile. Recommend we adjust shield harmonics to the upper EM band when proceeding.",
       "favoriteSeries": "Next Generation",
-      "watchedAll": "true",
+      "watchedAll": true,
       "image": "http://cdn2.darkhorizons.com/wp-content/uploads/2016/10/picard-meets-xenomorphs-in-new-comic.jpg"
     },
     {
       "memberName": "Collin",
       "bio": "Any device like that would produce high levels of triolic waves. These walls have undergone some kind of selective molecular polarization. I haven't determined if our phaser energy can generate a stable field. We could alter the photons with phase discriminators.",
       "favoriteSeries": "Original Series",
-      "watchedAll": "false",
+      "watchedAll": false,
       "image": "http://www.out.com/sites/out.com/files/2016/09/08/spok.jpg"
     },
     {
       "memberName": "Elise",
       "bio": "Shields up. I recommend we transfer power to phasers and arm the photon torpedoes. Something strange on the detector circuit. The weapons must have disrupted our communicators. You saw something as tasty as meat, but inorganically materialized out of patterns used by our transporters.",
       "favoriteSeries": "Voyager",
-      "watchedAll": "true",
-      "image": "https://www.google.com/search?q=janeway&safe=off&rlz=1C5CHFA_enUS727US727&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjJz_jE-ZLTAhUHS2MKHaSBAjkQ_AUIBigB&biw=1440&bih=651#safe=off&tbs=isz:lt,islt:vga&tbm=isch&q=janeway+coffee&imgrc=X1Bh2FiFEVB2XM:"
+      "watchedAll": true,
+      "image": "https://s-media-cache-ak0.pinimg.com/originals/e2/d5/02/e2d502ed6b11fb0c31f37ba7a4ad3dca.jpg"
     },
     {
       "memberName": "Sam",
       "bio": "Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.",
       "favoriteSeries": "Deep Space Nine",
-      "watchedAll": "yes",
+      "watchedAll": true,
       "image": "http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/large/public/2016/09/02/quark-ferengi-deep-space-nine-ds9.jpg"
     },
     {
       "memberName": "Ryan",
       "bio": "He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.",
       "favoriteSeries": "The Animated Series",
-      "watchedAll": "false",
-      "image": "http://vignette3.wikia.nocookie.net/memoryalpha/images/7/7a/Arex_lute.jpg/revision/latest?cb=20061126053103&path-prefix=en"
+      "watchedAll": false,
+      "image": "http://1.bp.blogspot.com/-qjmmONKkgJk/TlerTojd6iI/AAAAAAAAA10/SjD03WCpvaQ/s1600/arex.jpg"
     }
   ]
 }

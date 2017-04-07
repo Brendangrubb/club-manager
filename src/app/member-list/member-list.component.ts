@@ -13,7 +13,6 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
 
-
   //CONST MISSING router, ADD WHEN DYNAMIC ROUTING
   constructor(private memberService: MemberService) { }
 
