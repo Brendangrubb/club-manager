@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Member } from './../member.model';
 import { MemberService } from './../member.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { FirebaseObjectObservable } from 'angularfire2';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-member-list',
@@ -13,12 +17,15 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
 
+  goToDetailPage(clickedMember) {
+    this.router.navigate(['member', clickedMember.$key]);
+  };
+
   //CONST MISSING router, ADD WHEN DYNAMIC ROUTING
-  constructor(private memberService: MemberService) { }
+  constructor(private router: Router, private location: Location, private memberService: MemberService) { }
 
   ngOnInit() {
     this.members = this.memberService.getMembers();
-    console.log(this.members)
   }
 
 }

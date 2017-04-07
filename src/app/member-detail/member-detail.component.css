@@ -1,0 +1,22 @@
+img {
+  max-width: 300px;
+  border: 1px solid black;
+}
+
+.member {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #FDB523;
+}
+
+.member-data {
+  font-size: 1.1em;
+}
+
+.member-bio {
+  font-size: 1.2em;
+}
+
+.title {
+  margin-bottom: 20px;
+}

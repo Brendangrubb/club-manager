@@ -1,6 +1,6 @@
 <h1 class="center title">Current Members of Star Trek Club</h1>
 
-<div *ngFor="let member of members | async">
+<div *ngFor="let member of members | async" (click)="goToDetailPage(member)">
   <div class="col-sm-10">
     <div class="panel-body member">
       <div class="col-sm-6">
@@ -10,6 +10,7 @@
       <div class="col-sm-6">
         <p class="member-data">Favorite Series: {{member.favoriteSeries}}</p>
         <p class="member-data">Seen Entire Franchise: {{member.watchedAll}}</p>
+        <p class="member-data">Key: {{member.$key}}</p>
         <p class="member-bio">Bio: {{member.bio}}</p>
       </div>
     </div>

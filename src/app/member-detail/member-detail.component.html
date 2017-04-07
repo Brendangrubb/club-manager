@@ -1,0 +1,15 @@
+<div class="col-sm-10">
+  <div class="panel-body member">
+    <div class="col-sm-6">
+      <img class="img-rounded" src="{{(memberToDisplay | async)?.image}}" alt="Trek Club Member: {{(memberToDisplay | async)?.memberName}}">
+      <h2 class="member-name">{{(memberToDisplay | async)?.memberName}}</h2>
+    </div>
+    <div class="col-sm-6">
+      <p class="member-data">Favorite Series: {{(memberToDisplay | async)?.favoriteSeries}}</p>
+      <p class="member-data">Seen Entire Franchise: {{(memberToDisplay | async)?.watchedAll}}</p>
+      <p class="member-data">Key: {{(memberToDisplay | async)?.$key}}</p>
+      <p class="member-bio">Bio: {{(memberToDisplay | async)?.bio}}</p>
+    </div>
+  </div>
+  <br>
+</div>

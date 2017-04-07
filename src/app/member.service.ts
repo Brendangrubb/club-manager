@@ -12,6 +12,10 @@ export class MemberService {
     return this.members;
   }
 
+  getMemberById(memberId: string){
+    return this.angularFire.database.object('members/' + memberId);
+  }
+
   constructor(private angularFire: AngularFire) {
     this.members = angularFire.database.list('members');
   }
