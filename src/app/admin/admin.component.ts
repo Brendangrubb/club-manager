@@ -18,6 +18,11 @@ export class AdminComponent implements OnInit {
   memberId: string;
   members: FirebaseListObservable<any[]>;
 
+  submitForm(memberName: string, bio: string, favoriteSeries: string, watchedAll: boolean, image: string){
+    var newMember: Member = new Member(memberName, bio, favoriteSeries, watchedAll, image);
+    console.log(newMember);
+  }
+
   constructor(private router: Router, private location: Location, private memberService: MemberService) { }
 
   ngOnInit() {

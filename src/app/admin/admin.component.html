@@ -6,11 +6,11 @@
   <form>
     <div class="form-group">
       <label for="memberName">Name of Member</label>
-      <input #memberName class="form-control" type="text" name="memberName">
+      <input #memberName class="form-control" type="text" name="memberName" required="required">
     </div>
     <div class="form-group">
       <label for="bio">Member Bio</label>
-      <textarea #bio class="form-control" rows="3" type="text" name="bio"></textarea>
+      <textarea #bio class="form-control" rows="3" type="text" name="bio" required="required"></textarea>
     </div>
     <div class="row">
       <div class="col-sm-6">
@@ -38,10 +38,10 @@
     </div>
     <div class="form-group">
       <label for="image">Image URL</label>
-      <input #image class="form-control" type="text" name="image">
+      <input #image class="form-control" type="text" name="image" required="required">
     </div>
     <div class="center">
-      <button class="btn" type="button" name="button">Engage!</button>
+      <button class="btn" type="button" name="button" (click)="submitForm(memberName.value, bio.value, favoriteSeries.value, watchedAll.value, image.value)">Engage!</button>
     </div>
   </form>
 </div>
