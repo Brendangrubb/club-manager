@@ -21,12 +21,12 @@
 * Open the application in Atom (or text editor of choice)
   * Create a file with the following path _src/app/api-keys.ts_
   * Add the following code:
-      _export var masterFirebaseConfig = {
-      apiKey: "YOUR API KEY HERE",
-      authDomain: "YOUR DB DOMAIN HERE",
-      databaseURL: "YOUR DB URL HERE",
-      storageBucket: "YOUR STORAGEBUCKET INFO HERE,
-      messagingSenderId: "YOUR SENDER ID HERE"
+      _export var masterFirebaseConfig = {<br>
+      &nbsp;apiKey: "YOUR API KEY HERE",<br>
+      &nbsp;authDomain: "YOUR DB DOMAIN HERE",<br>
+      &nbsp;databaseURL: "YOUR DB URL HERE",<br>
+      &nbsp;storageBucket: "YOUR STORAGEBUCKET INFO HERE,<br>
+      &nbsp;messagingSenderId: "YOUR SENDER ID HERE"<br>
     };_
   * Generate credentials from Firebase (or database of choice) and add to api-keys.ts file
 * Type the following commands in Terminal:
@@ -40,7 +40,7 @@
 &nbsp;
 ## Planning
 
-#### Basic UI
+#### Basic UX
 * A user can view a list of current members of Star Trek Club. A user can click on any member from that list for a detail view of that member profile. A user can filter the list of current Star Trek Club members to exclude members who have not seen all episodes of the franchise. An admin user can add, delete or update members of Star Trek Club.
 
 #### MVP Checklist
@@ -59,7 +59,7 @@
 
   * **Create Model and Firebase**
     * generate and populate member.model (name, picture, bio, favorite series, amount of franchise watched)
-    * add seed data to root component export class
+    * add seed file
     * set up Firebase
       * generate DB on Firebase site
       * add credentials to api-keys.ts, add to module
