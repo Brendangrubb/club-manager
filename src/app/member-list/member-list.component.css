@@ -1,5 +1,5 @@
 img {
-  max-width: 300px;
+  max-height: 200px;
   border: 1px solid black;
 }
 
@@ -7,14 +7,6 @@ img {
   border: 1px solid black;
   border-radius: 20px;
   background-color: #FDB523;
-}
-
-.member-data {
-  font-size: 1.1em;
-}
-
-.member-bio {
-  font-size: 1.2em;
 }
 
 .title {
