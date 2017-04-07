@@ -1,5 +1,5 @@
 img {
-  max-width: 300px;
+  max-width: 400px;
   border: 1px solid black;
 }
 
@@ -10,11 +10,21 @@ img {
 }
 
 .member-data {
-  font-size: 1.1em;
+  font-size: 1.2em;
+
 }
 
 .member-bio {
-  font-size: 1.2em;
+  font-size: 1.5em;
+}
+
+.member-name {
+  font-size: 3em;
+}
+
+.opacity {
+  opacity: .75;
+  font-weight: bold;
 }
 
 .title {

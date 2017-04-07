@@ -1,15 +1,14 @@
-<div class="col-sm-10">
-  <div class="panel-body member">
-    <div class="col-sm-6">
-      <img class="img-rounded" src="{{(memberToDisplay | async)?.image}}" alt="Trek Club Member: {{(memberToDisplay | async)?.memberName}}">
-      <h2 class="member-name">{{(memberToDisplay | async)?.memberName}}</h2>
-    </div>
-    <div class="col-sm-6">
-      <p class="member-data">Favorite Series: {{(memberToDisplay | async)?.favoriteSeries}}</p>
-      <p class="member-data">Seen Entire Franchise: {{(memberToDisplay | async)?.watchedAll}}</p>
-      <p class="member-data">Key: {{(memberToDisplay | async)?.$key}}</p>
-      <p class="member-bio">Bio: {{(memberToDisplay | async)?.bio}}</p>
-    </div>
+<br>
+<br>
+<div class="panel-body member">
+  <div class="col-sm-6">
+    <img class="img-rounded" src="{{(memberToDisplay | async)?.image}}" alt="Trek Club Member: {{(memberToDisplay | async)?.memberName}}">
+    <h2 class="member-name">{{(memberToDisplay | async)?.memberName}}</h2>
   </div>
-  <br>
+  <div class="col-sm-6">
+    <p class="member-data"><span class="opacity">Favorite Series: </span> <em>{{(memberToDisplay | async)?.favoriteSeries}}</em></p>
+    <p class="member-data"><span class="opacity">Seen Entire Franchise: </span><em>{{(memberToDisplay | async)?.watchedAll}}</em></p>
+    <p class="opacity member-data"><u>Bio</u> </p>
+    <p class="member-bio">{{(memberToDisplay | async)?.bio}}</p>
+  </div>
 </div>
