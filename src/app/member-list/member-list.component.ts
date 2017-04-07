@@ -21,7 +21,6 @@ export class MemberListComponent implements OnInit {
     this.router.navigate(['member', clickedMember.$key]);
   };
 
-  //CONST MISSING router, ADD WHEN DYNAMIC ROUTING
   constructor(private router: Router, private location: Location, private memberService: MemberService) { }
 
   ngOnInit() {

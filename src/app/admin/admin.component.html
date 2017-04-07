@@ -1,3 +1,77 @@
-<p>
-  admin works!
-</p>
+<h1 class="center"><u>Add New Member</u></h1>
+<br>
+<div class="col-sm-3">
+</div>
+<div class="col-sm-6">
+  <form>
+    <div class="form-group">
+      <label for="memberName">Name of Member</label>
+      <input #memberName class="form-control" type="text" name="memberName">
+    </div>
+    <div class="form-group">
+      <label for="bio">Member Bio</label>
+      <textarea #bio class="form-control" rows="3" type="text" name="bio"></textarea>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="favoriteSeries">What's Your Favoritye Series?</label>
+          <select #favoriteSeries class="form-control" name="favoriteSeries">
+            <option value="The Original Series">The Original Series</option>
+            <option value="The Animated Series">The Animated Series</option>
+            <option value="Next Generation">Star Trek: The Next Generation</option>
+            <option value="Deep Space Nine">Deep Space Nine</option>
+            <option value="Voyager">Voyager</option>
+            <option value="Enterprise">Enterprise</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="watchedAll">Seen The Entire Francise?</label>
+          <select #watchedAll class="form-control" name="watchedAll">
+            <option value=true>Yep</option>
+            <option value=false>Nope</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      <input #image class="form-control" type="text" name="image">
+    </div>
+    <div class="center">
+      <button class="btn" type="button" name="button">Engage!</button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1 class="center title">Current Members of Star Trek Club</h1>
+
+<div *ngFor="let member of members | async">
+  <div class="col-sm-4">
+    <div class="panel-body member">
+      <div class="center">
+        <img class="img-rounded" src="{{member.image}}" alt="Trek Club Member: {{member.memberName}}">
+      </div>
+      <h2 class="member-name center">{{member.memberName}}</h2>
+    </div>
+    <br>
+
+  </div>
+</div> -->

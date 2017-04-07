@@ -1,0 +1,14 @@
+img {
+  max-height: 75px;
+  border: 1px solid black;
+}
+
+.member {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #FDB523;
+}
+
+.title {
+  margin-bottom: 20px;
+}
