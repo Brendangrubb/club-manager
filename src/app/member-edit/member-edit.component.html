@@ -1,3 +1,34 @@
-<p>
-  member-edit works!
-</p>
+<h4>Edit Member Details</h4>
+
+<form>
+  <div class="form-group">
+    <input [(ngModel)]="selectedMember.memberName" class="form-control" type="text" name="memberName" required="required" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <textarea [(ngModel)]="selectedMember.bio" class="form-control" rows="2" type="text" name="bio" required="required" placeholder="Bio"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="favoriteSeries">Favorite Series?</label>
+    <select [(ngModel)]="selectedMember.favoriteSeries" class="form-control" name="favoriteSeries">
+      <option value="The Original Series">TOS</option>
+      <option value="The Animated Series">TAS</option>
+      <option value="Next Generation">TNG</option>
+      <option value="Deep Space Nine">DS9</option>
+      <option value="Voyager">VOY</option>
+      <option value="Enterprise">ENT</option>
+    </select>
+  </div>
+      <div class="form-group">
+        <label for="watchedAll">Seen it All?</label>
+        <select [(ngModel)]="selectedMember.watchedAll" class="form-control" name="watchedAll">
+          <option value=true>Yep</option>
+          <option value=false>Nope</option>
+        </select>
+      </div>
+  <div class="form-group">
+    <input [(ngModel)]="selectedMember.image" class="form-control" type="text" name="image" required="required" placeholder="Image URL">
+  </div>
+  <div class="center">
+    <button class="btn" type="button" name="button" (click)="triggerUpdateMember(selectedMember)">Done Editing</button>
+  </div>
+</form>

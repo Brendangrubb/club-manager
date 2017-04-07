@@ -1,12 +1,16 @@
 <h1 class="center title">Current Members of Star Trek Club</h1>
 
-<div *ngFor="let member of members | async" (click)="goToDetailPage(member)">
+<div *ngFor="let member of members | async">
   <div class="col-sm-4">
     <div class="panel-body member">
       <div class="center">
-        <img class="img-rounded" src="{{member.image}}" alt="Trek Club Member: {{member.memberName}}">
+        <img (click)="goToDetailPage(member)" class="img-rounded" src="{{member.image}}" alt="Trek Club Member: {{member.memberName}}">
       </div>
       <h2 class="member-name center">{{member.memberName}}</h2>
+      <div *ngIf="currentRoute === '/admin'">
+      <hr>
+      <app-member-edit [selectedMember]="member"></app-member-edit>
+    </div>
     </div>
     <br>
 

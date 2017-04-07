@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Member } from './../member.model';
 import { MemberService } from './../member.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
@@ -14,8 +14,13 @@ import { Router } from '@angular/router';
   providers: [MemberService]
 })
 export class MemberEditComponent implements OnInit {
+  @Input() selectedMember;
 
-  constructor() { }
+  triggerUpdateMember(selectedMember){
+    this.memberService.updateMember(selectedMember);
+  }
+
+  constructor(private memberService: MemberService) { }
 
   ngOnInit() {
   }
