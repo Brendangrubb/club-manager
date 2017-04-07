@@ -8,6 +8,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
+import { HeaderComponent } from './header/header.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -19,7 +20,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
