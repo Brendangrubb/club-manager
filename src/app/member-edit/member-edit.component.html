@@ -4,7 +4,7 @@
   <button class="btn btn-danger btn-sm"(click)="triggerDeleteMember(selectedMember)">Delete</button>
 </div>
 <form *ngIf="editForm">
-  <h4>Edit Member Details</h4>
+  <h4 class="center">Edit Member Details</h4>
   <div class="form-group">
     <input [(ngModel)]="selectedMember.memberName" class="form-control" type="text" name="memberName" required="required" placeholder="Name">
   </div>
