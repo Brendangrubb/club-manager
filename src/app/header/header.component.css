@@ -1,8 +1,35 @@
+.header-links:hover {
+  transition: .2s;
+  text-shadow: 1px 1px 1px #296DBB;
+  color: white;
+}
+
+.header-links {
+  color: #296DBB;
+  transition: color 1s;
+}
+
+.nav {
+  font-size: 1.6em;
+  padding-top: 35px;
+}
+
 .navbar {
   padding-top: 30px;
-  padding-bottom: 50px;
+  background-color: #000000;
 }
 
 .navbar-brand {
-  font-size: 5em;
+  padding-top: 30px;
+  font-size: 6.5em;
+  font-family: tng;
+  letter-spacing: .1em;
+  color: #296DBB;
+  transition: color 1s;
+}
+
+.navbar-brand:hover {
+  transition: .2s;
+  text-shadow: 1px 1px 1px #296DBB;
+  color: white;
 }

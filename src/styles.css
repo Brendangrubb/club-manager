@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+font-family: 'tng';
+src: url('./assets/tng.ttf')  format('truetype');
+font-weight: bold;
+}
+
+@font-face {
+font-family: 'dsninetitle';
+src: url('./assets/dsninetitle.ttf')  format('truetype');
+}
+
+.all-style {
+  font-family: dsninetitle;
+
+}
 
 .center {
   text-align: center;
