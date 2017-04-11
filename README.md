@@ -112,10 +112,6 @@
 
 
 &nbsp;
-## Future Versions
-
-
-&nbsp;
 ## Known Bugs
 * No known bugs
 

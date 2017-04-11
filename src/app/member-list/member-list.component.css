@@ -4,6 +4,11 @@ img {
   border: 1px solid black;
 }
 
+img:hover {
+  box-shadow: 1px 1px 5px #9C9CFF;
+  border: 2px solid #9C9CFF;
+}
+
 .member {
   border: 1px solid black;
   border-radius: 20px;

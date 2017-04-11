@@ -12,7 +12,13 @@ src: url('./assets/dsninetitle.ttf')  format('truetype');
 
 .all-style {
   font-family: dsninetitle;
+}
 
+.body-color {
+  background-color: #9C9CFF;
+  margin: auto 10px;
+  width: auto;
+  min-height: 800px;
 }
 
 .center {

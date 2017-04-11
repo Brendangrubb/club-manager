@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./member-edit.component.css'],
   providers: [MemberService]
 })
+
 export class MemberEditComponent implements OnInit {
   @Input() selectedMember;
   editForm = false;
@@ -39,5 +40,4 @@ export class MemberEditComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

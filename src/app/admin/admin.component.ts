@@ -20,7 +20,6 @@ export class AdminComponent implements OnInit {
 
   submitForm(memberName: string, bio: string, favoriteSeries: string, watchedAll: boolean, image: string){
     var newMember: Member = new Member(memberName, bio, favoriteSeries, watchedAll, image);
-    console.log(newMember);
     this.memberService.addMember(newMember);
   }
 
@@ -29,6 +28,4 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
     this.members = this.memberService.getMembers();
   }
-
-
 }

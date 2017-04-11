@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Member } from './../member.model';
 import { MemberService } from './../member.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
-import { FirebaseObjectObservable } from 'angularfire2';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
@@ -13,6 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./member-detail.component.css'],
   providers: [MemberService]
 })
+
 export class MemberDetailComponent implements OnInit {
   memberId: string;
   memberToDisplay;
@@ -25,5 +25,4 @@ export class MemberDetailComponent implements OnInit {
      });
      this.memberToDisplay = this.memberService.getMemberById(this.memberId);
     }
-
 }

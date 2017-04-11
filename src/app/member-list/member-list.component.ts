@@ -32,5 +32,4 @@ export class MemberListComponent implements OnInit {
   ngOnInit() {
     this.members = this.memberService.getMembers();
   }
-
 }
