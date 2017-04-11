@@ -4,7 +4,7 @@
 
 &nbsp;
 ## Description
-**Club Manager** is a Javascript application that demonstrates my ability to build a project using the Angular framework. With this application, a user can manage the membership roster of a club. This app's functionality is demonstrated with a sample organization called Star Trek Club: a group of Trek fans that get together monthly to watch and discuss episodes from the Star Trek franchise. A user can view a list of all members of Star Trek Club, plus member detail pages where their profile is flushed out. An admin is able to add, edit or delete members. Copy and paste this link into your browser to sample a live version of the site deployed via Firebase Hosting: club-manager-e168f.firebaseapp.com
+**Club Manager** is a Javascript application that demonstrates my ability to build a project using the Angular framework. With this application, a user can manage the membership roster of a club. This app's functionality is demonstrated with a sample organization called Star Trek Club: a group of Trek fans that get together monthly to watch and discuss episodes from the Star Trek franchise. A user can view a list of all members of Star Trek Club, plus member detail pages where their profile is flushed out. An admin is able to add, edit or delete members. Follow the link to sample a live version of the site deployed via Firebase Hosting: [https://club-manager-e168f.firebaseapp.com/](https://club-manager-e168f.firebaseapp.com/)
 
 
 &nbsp;
