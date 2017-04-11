@@ -14,6 +14,7 @@ import { MemberListComponent } from './member-list/member-list.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { MemberEditComponent } from './member-edit/member-edit.component';
+import { SuperfanPipe } from './superfan.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     MemberListComponent,
     MemberDetailComponent,
     AdminComponent,
-    MemberEditComponent
+    MemberEditComponent,
+    SuperfanPipe
   ],
   imports: [
     BrowserModule,

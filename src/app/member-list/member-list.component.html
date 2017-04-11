@@ -1,6 +1,13 @@
 <h1 class="center title">Current Members of Star Trek Club</h1>
 
-<div *ngFor="let member of members | async">
+<div class="superfan center">
+  <select (change)="onChange($event.target.value)">
+    <option value="allMembers" selected="selected">All Members of Star Trek Club</option>
+    <option value="superfans">STC Members who have seen the entire franchise!</option>
+  </select>
+</div>
+<br>
+<div *ngFor="let member of members | async | superfan:superfanFilter">
   <div class="col-sm-4">
     <div class="panel-body member">
       <div class="center">

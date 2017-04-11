@@ -17,10 +17,15 @@ import { Router } from '@angular/router';
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  superfanFilter: string = "allMembers";
 
   goToDetailPage(clickedMember) {
     this.router.navigate(['member', clickedMember.$key]);
   };
+
+  onChange(selection){
+    this.superfanFilter = selection;
+  }
 
   constructor(private router: Router, private location: Location, private memberService: MemberService) { }
 
