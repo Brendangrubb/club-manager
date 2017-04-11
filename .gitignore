@@ -45,3 +45,6 @@ Thumbs.db
 
 # Firebase credentials
 /src/app/api-keys.ts
+
+# Deployment
+/functions/node_modules
